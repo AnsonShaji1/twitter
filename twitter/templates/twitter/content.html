@@ -1,0 +1,24 @@
+{% extends 'twitter/base.html' %}
+{% block content %}
+
+
+
+{% for i in a %}
+    
+    <p> Text : {{ i.text }}</p>
+    {% with d=i.user %}
+    <p>Screen name={{ d.screen_name }}</p>
+    <p>Name={{ d.name }}</p>
+    {% endwith %}
+   
+    <br /><br />
+{% endfor %}
+
+
+
+
+
+
+
+{% endblock %}
+
